@@ -1,11 +1,40 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+
+      <router-link to="/about">Inicio</router-link>|
+      <router-link to="/">Favorito</router-link> 
+      
     </nav>
     <router-view/>
+
+    <header>
+        <form id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+            <input type="number" placeholder="Año" id="year" name="year" class="search">
+            <button type="submit" class="search">Buscar</button>
+        
+          </form>
+    </header>
+
+    <main id="main"> </main>
+
+    <footer class="container">
+
+<div class="footer-credits">
+    <p class="paragraph text-title">© 2023 Emae.</p>
+    <p class="paragraph text-title">Roque Mamani | Pablo Quipildor.</p>
+</div>
+
+
+
+</footer>
+
+    
   </div>
+
+
+
 </template>
 
 <style>
@@ -29,4 +58,10 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.footer-credits
+{
+  background-color: white;
+}
+
 </style>
